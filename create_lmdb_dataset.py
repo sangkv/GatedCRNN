@@ -106,6 +106,13 @@ def show_data(image_path_list, label_list, demo_number=5):
 
 
 if __name__ == '__main__':
+    input_path = 'data/train'
+    output_path = 'data/trainset'
+
+    image_path_list, label_list = read_data_from_folder(input_path)
+    show_data(image_path_list, label_list)
+    createDataset(output_path, image_path_list, label_list)
+
     input_path = 'data/val'
     output_path = 'data/valset'
 

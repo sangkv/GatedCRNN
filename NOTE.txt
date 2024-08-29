@@ -1,9 +1,14 @@
-I. Create LMDB dataset
+I. Install
+
+pip install -r requirements.txt
+
+
+II. Create LMDB dataset
 
 python create_lmdb_dataset.py
 
 
-II. Train (train.py -> fine-tuning.py)
+III. Train (train.py -> fine-tuning.py)
 
 * Step 1:
 python train.py
@@ -12,7 +17,7 @@ python train.py
 python fine-tuning.py
 
 
-III. Demo
+IV. Demo
 
 python demo.py
 

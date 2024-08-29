@@ -31,7 +31,7 @@ class Config:
 
 opt = Config()
 
-train_data = 'data/tuneset'
+train_data = 'data/trainset'
 train_dataset = dataset.LmdbDataset(root=train_data, opt=opt)
 train_loader = DataLoader(train_dataset, 
                           batch_size=32, 
@@ -61,7 +61,7 @@ model = GatedCRNN(num_classes=opt.num_class, input_channel=opt.input_channel)
 print(model)
 
 # fine-tuning
-model.load_state_dict(torch.load('pretrained_model/best_norm_ED2.pth'))
+model.load_state_dict(torch.load('pretrained_model/best_norm_ED.pth'))
 # freeze the CNN layer weights of the model
 for param in model.encoder.parameters():
     param.requires_grad = False
