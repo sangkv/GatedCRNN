@@ -1,0 +1,18 @@
+I. Create LMDB dataset
+
+python create_lmdb_dataset.py
+
+
+II. Train (train.py -> fine-tuning.py)
+
+* Step 1:
+python train.py
+
+* Step 2:
+python fine-tuning.py
+
+
+III. Demo
+
+python demo.py
+
