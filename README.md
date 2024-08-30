@@ -1,6 +1,11 @@
 # Gated Convolutional Recurrent Neural Networks for Multilingual Handwriting Recognition
 
+
+## Overview
+
 This repository contains a PyTorch implementation of Gated Convolutional Recurrent Neural Networks (GatedCRNN) designed for multilingual handwriting recognition. The project provides a comprehensive framework for recognizing handwritten text across various languages using advanced neural network architectures.
+
+![alt text](doc/Architectures.png)
 
 ## Features
 
